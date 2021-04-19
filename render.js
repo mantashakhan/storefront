@@ -1,7 +1,7 @@
 var fs = require("fs");
 
 function mergeValues(values, content) {
-  for (var key in values) {
+  for (var key in values) { // check if the key is in values
     content = content.replace("{{" + key + "}}", values[key])
   }
   return content;

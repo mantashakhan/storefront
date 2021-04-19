@@ -13,7 +13,7 @@ function createDatabase(){
     MongoClient.connect(url+'myshopdb', function(err, db) {
       if (err) throw err;
       console.log("Database created!");
-      db.close();
+      db.close(); // database closed 
     });
 } 
 
